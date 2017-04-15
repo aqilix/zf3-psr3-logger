@@ -23,6 +23,9 @@
         "psr/log": "^1.0"
     },
     "autoload": {
+        "psr-4": {
+            "Aqilix\\ZF3PSR3Logger\\": "src/Aqilix/ZF3PSR3Logger"
+        }
     },
     "autoload-dev": {
         "psr-4": {
