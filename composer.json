@@ -13,15 +13,31 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": "^5.6 || ^7.1",
+        "php": "^5.6 || ^7.0",
+        "zendframework/zend-eventmanager": "^3.0",
+        "zendframework/zend-modulemanager": "^2.7.1",
+        "zendframework/zend-servicemanager": "^3.0.3",
+        "zendframework/zend-stdlib": "^3.0",
         "zendframework/zend-log": "^2.9",
+        "container-interop/container-interop": "^1.1",
         "psr/log": "^1.0"
     },
     "autoload": {
+        "psr-4": {
+            "Aqilix\\ZF3PSR3Logger\\": "src/Aqilix/ZF3PSR3Logger"
+        }
     },
     "autoload-dev": {
+        "psr-4": {
+            "Aqilix\\ZF3PSR3LoggerTest\\": "test/"
+        }
     },
-    "extra": [],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.0.1-dev",
+            "dev-develop": "0.0.2-dev"
+        }
+    },
     "scripts": {
         "cs-check": "phpcs",
         "cs-fix": "phpcbf",
