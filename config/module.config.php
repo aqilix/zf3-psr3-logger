@@ -1,6 +1,4 @@
 <?php
-use Zend\Log\Logger;
-
 return [
     "service_manager" => [
         "abstract_factories" => [
@@ -17,7 +15,7 @@ return [
             "writers" => [
                 [
                     "name" => "stream",
-                    "priority" => Logger::DEBUG,
+                    "priority" => 7, // DEBUG
                     "options" => [
                         'stream' => 'data/log/system.log',
                     ]
